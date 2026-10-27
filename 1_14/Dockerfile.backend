@@ -1,1 +1,20 @@
 # use here COPY 1_13 .
+FROM golang:1.16
+
+WORKDIR = /usr/src/app
+
+ENV PORT=8080
+
+ENV REQUEST_ORIGIN=http://localhost:5001
+
+EXPOSE $PORT
+
+COPY 1_13 ./
+
+RUN go mod download
+
+RUN go version
+
+RUN go build -v
+
+ENTRYPOINT ["./server"]
