@@ -1,0 +1,9 @@
+https://english-spelling-test-webapp.onrender.com/
+
+1. Registered, logged in on render.com
+2. Linked my github accoutn to 
+3. Created new web-service for my repository on github
+4. Filled out all neccessary fields (name, branch etc.)
+5. Ensured, the build command is "pip install -r requirements.txt"
+6. Ensured, the start command is "./init_update_DB.sh spelling.db; flask run --host=0.0.0.0 --port=10000"
+7. Ensured, project autodeploys on commit 
